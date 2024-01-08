@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 18px;
+}
+button {
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 11;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.links,
+.request {
+  display: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+#mobile_nav {
+  background-image: linear-gradient(hsl(233, 26%, 24%), hsla(233, 26%, 24%, 0));
+  padding-top: 100px;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+.mobile_links {
+  max-width: 300px;
+  margin: 0 auto;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 18px;
+  padding: 35px 0;
+}
+.request,
+.content-request {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+  padding: 15px 30px;
+  border-radius: 32px;
+  color: white;
+}
+.request:hover,
+.content-request:hover {
+  opacity: 80%;
+}
+.image {
+  background-image: url(images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mockup {
+  width: 100%;
+  margin-top: -70px;
+}
+.content {
+  padding: 30px 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+.content h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  color: hsla(233, 26%, 24%, 0.9);
+  font-weight: 500;
+}
+.content p {
+  color: hsl(233, 8%, 62%);
+  max-width: 450px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.article-2 {
+  background-color: hsl(220, 16%, 96%);
+  margin-top: 50px;
+  text-align: center;
+  padding: 50px 0;
+}
+.article-2 p {
+  max-width: 450px;
+  margin: 10px auto;
+  line-height: 1.5;
+  color: hsl(233, 8%, 62%);
+}
+.article-2 h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: hsla(233, 26%, 24%);
+  max-width: 320px;
+  margin: 0 auto;
+}
+.article-2 h3 {
+  color: hsla(233, 26%, 24%);
+  font-weight: 400;
+}
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-top: 25px;
+}
+.sections img {
+  margin-bottom: 25px;
+}
+.article-3 {
+  margin: 100px 0;
+}
+.article-3 h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+}
+figure img {
+  width: 100%;
+  height: 220px;
+}
+figcaption {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.latest {
+  line-height: 1.5;
+  background-color: white;
+}
+.caption {
+  padding: 0px 20px 30px;
+}
+.latest p {
+  margin: 10px auto 0px;
+  max-width: 320px;
+  color: hsl(233, 8%, 62%);
+}
+.latest h4 {
+  max-width: 320px;
+  margin: 0px auto;
+  color: hsl(233, 26%, 24%);
+}
+figcaption {
+  color: hsl(233, 8%, 62%);
+  margin: 0 20px 5px;
+}
+footer {
+  background-color: hsl(233, 26%, 24%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.logo-and-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.socials {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: hsl(0, 0%, 98%);
+
+  font-size: 14px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.right p {
+  font-size: 12px;
+  color: hsl(233, 8%, 62%);
+}
+.request-size {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+.attribution {
+  font-size: 12px;
+  color: white;
+  margin-bottom: 5px;
+}
+.footer-logo svg > g > path {
+  fill: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .request {
+    display: block;
+  }
+  .links {
+    display: flex;
+    gap: 20px;
+    color: hsl(233, 8%, 62%);
+  }
+  #mobile_nav {
+    display: none;
+  }
+  .links a {
+    border-bottom: 4px solid transparent;
+    padding: 20px 0;
+  }
+  .links a:hover {
+    border-image: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    );
+    border-image-slice: 1;
+    color: hsl(233, 26%, 24%);
+  }
+
+  .nav {
+    padding: 0;
+  }
+  .image {
+    background-image: url(images/bg-intro-desktop.svg);
+    width: 50%;
+    background-position: -28px -70px;
+  }
+  .parent {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    width: 45vw;
+  }
+  .content p {
+    margin: 0;
+  }
+  .sections {
+    flex-direction: row;
+    margin: 50px 0;
+  }
+  .article-2 {
+    text-align: left;
+    padding: 70px 0 50px;
+    margin-top: -150px;
+  }
+  .article-2 h2 {
+    max-width: initial;
+  }
+  .article-2 p {
+    max-width: initial;
+  }
+  .article-2 span {
+    display: block;
+  }
+  .article-3 h2 {
+    text-align: left;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .left {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+  }
+  .footer-links {
+    align-items: flex-start;
+  }
+  .right {
+    align-items: flex-end;
+  }
+  .socials svg path:hover,
+  .latest h4:hover,
+  .footer-links a:hover {
+    transition: 5ms;
+    fill: hsl(136, 65%, 51%);
+    color: hsl(136, 65%, 51%);
+    cursor: pointer;
+  }
+  .attribution {
+    margin-top: 10px;
+  }
+}
